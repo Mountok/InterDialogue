@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 0px 190px;
+    justify-content: space-between;
+}
+.logotype img{
+    padding: 14px 0;
+    width: 220px;
+}
+.navbar{
+    display: flex;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 100%;
+    transition: .2s ease-in-out;  
+}
+.navbar ul li .link{
+    height: 100%;    
+    width: 110px;
+    text-align: center;
+    line-height: 100px;
+    color: black;
+    text-decoration: none;
+}
+.navbar ul li:hover{
+    background-color: #64aac4;
+}
+.navbar ul .active{
+    background-color: #64aac4;
+
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px 190px;
+    background-color: #51b7db;
+    color: #eeeeee;
+}
+.footer .small_text{
+    color: #5c5c5c;
+    font-size: 12px;
+}
+.footer a{
+    color: #e9e9e9;
+
+}
+.footer div{
+    margin: 0 10px;
+}
+.company{
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+.address{
+    width: 300px;
+
+}
+.rooms{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer a:hover{
+    color: #ffffff;
+}
