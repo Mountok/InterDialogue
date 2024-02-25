@@ -1,104 +1,115 @@
-import React from 'react'
-import './HomeStyle.css'
+import React, { useState } from "react";
+import "./HomeStyle.css";
 const Home = () => {
+  let [imageNum, setImageNum] = useState(1);
+  let [allNums, setAllNums] = useState([1, 2, 3, 4, 5, 6, 7]);
+  setInterval(() => {
+    changePhoto();
+  }, 10000);
+
+  const changePhoto = () => {
+    if (allNums[imageNum + 1 - 1] == imageNum + 1) {
+      setImageNum(imageNum + 1);
+    } else {
+      setImageNum(1);
+    }
+  };
+
   return (
-    <main className='main'>
-      <section className='presentation'>
+    <main className="main">
+      <section className={`presentation p_image_${imageNum}`}>
         <div className="title">
           <p>InterDialogue</p>
-          <p>Профессиональное консалтинговое агентство, основанное бизнесменами с реальным практическим опытом.</p>
+          <p>
+            Профессиональное консалтинговое агентство, основанное бизнесменами с
+            <span> реальным</span> практическим опытом.
+          </p>
         </div>
       </section>
-      <section className='services'>
+      <section className="services">
         <div className="services_blocks">
           <div className="service">
             <img src="/svgs/consulting.svg" alt="" />
-            <p className='service_title'>Консалтинг</p>
-            <p className='service_text'>Проектный менеджмент и управление процессами. Инвестиционный, правовой, налоговый и кадровый консалтинг.
+            <p className="service_title">Консалтинг</p>
+            <p className="service_text">
+              Проектный менеджмент и управление процессами. Инвестиционный,
+              правовой, налоговый и кадровый консалтинг.
             </p>
           </div>
           <div className="service">
             <img src="/svgs/audit.svg" alt="" />
-            <p className='service_title'>Аудит</p>
-            <p className='service_text'>
-            Анализ вашего бизнеса и выявление ключевых проблем: аудит системы управления, продаж и финансов.
+            <p className="service_title">Аудит</p>
+            <p className="service_text">
+              Анализ вашего бизнеса и выявление ключевых проблем: аудит системы
+              управления, продаж и финансов.
             </p>
           </div>
           <div className="service">
-            <img src="/svgs/business.svg" alt=""/>
-            <p className='service_title'>Бизнес</p>
-            <p className='service_text'>Помощь в регистрации или приобретении бизнеса. Комплексное сопровождение деятельности на территории страны.</p>
+            <img src="/svgs/business.svg" alt="" />
+            <p className="service_title">Бизнес</p>
+            <p className="service_text">
+              Помощь в регистрации или приобретении бизнеса. Комплексное
+              сопровождение деятельности на территории страны.
+            </p>
           </div>
           <div className="service">
             <img src="/svgs/investment.svg" alt="" />
-            <p className='service_title'>Инвестиции
-</p>
-            <p className='service_text'>Изучение возможностей для выгодных и стабильных вариантов вложения средств, позволяющих сохранить и приумножить капитал.</p>
+            <p className="service_title">Инвестиции</p>
+            <p className="service_text">
+              Изучение возможностей для выгодных и стабильных вариантов вложения
+              средств, позволяющих сохранить и приумножить капитал.
+            </p>
           </div>
         </div>
       </section>
-      <section className='about'>
-
+      <section className="about">
         <div className="about_block">
-
-          
-
           <div className="about_content">
-
-            <video className='about_video' id='videoTag' controls>
-              <source src="/video/442832334.mp4" type='video/mp4'/>
-            </video>
-
+            <iframe
+              className="about_video"
+              src="https://player.vimeo.com/video/146428873?h=10b961b1be"
+              width="640"
+              height="360"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
 
           <div className="about_content">
-            <p>Бизнес-услуги в Европе</p>
-            <p>Открыть фирму или купить готовый бизнес в Европе в первую 
-              очередь означает вести дела в стране со стабильной законодательной 
-              базой и низкими рисками. Вам гарантированы безопасность, качественный сервис и легальный доход.</p>
-            <p>Мы, являясь действующими бизнесменами, обладаем большим опытом открытия и сопровождения бизнеса. И мы готовы поделиться этим опытом. С нами старт и ведение вашего бизнеса в Европе будет успешным и динамичными.</p>
+            <p>
+              Бизнес в Европе - это возможность для развития и роста.
+              Европейский рынок предлагает широкие перспективы для инноваций,
+              инвестиций и партнерств. Здесь важно быть в курсе последних
+              тенденций и законодательства, чтобы использовать все преимущества
+              и успешно развивать свой бизнес.
+            </p>
+            <p>
+              Поэтому знание особенностей бизнеса в Европе и общее понимание
+              местных реалий - ключевые факторы для успешной деятельности на
+              этом перспективном рынке.
+            </p>
           </div>
 
           <div className="about_content_2">
             <div className="about_content_2_block">
               <div className="about_content_2_block_header">
-                <p>Зачем бизнес в Европе?</p>
-              </div>
-              <div className="about_content_2_block_text">
-                <p>
-                Преимуществами ведения бизнеса в Европе являются постоянство законодательной базы, гибкое налогообложение и низкий уровень коррупции. 
-                Зарегистрировать фирму в Европе можно и нерезиденту (гражданину РФ), однако в большинстве случаев требуется резидент-управляющий. 
-                Регистрация компании в Европе является возможностью получения вида на жительства в ЕС для Вас и Вашей семьи. 
-                Европейские компании во всем мире имеют положительную репутацию, соответственно, возрастает уровень доверия со стороны потребителей и поставщиков.
-                </p>
-                <img src="/images/business.jpg" alt="" />
-              </div>
-            </div>
-            
-            <div className="about_content_2_block">
-              <div className="about_content_2_block_header">
                 <p>Почему именно мы?</p>
               </div>
-              <div className="about_content_2_block_text">
-              <img src="/images/flag-avstrii.jpg" alt="" />
                 <p>
-                Основой философии нашей компании являются ее ценности. 
-                Мы обозначаем конкретные приоритеты, в первую очередь это: 
-                интересы клиентов, акционеров, сотрудников и руководства. 
-                Профессионализм, прозрачность и компромисс в интересах всех 
-                сторон являются основой долгосрочного процветания компании и ее клиентов. Так-же 
-                все наши проекты финансируются и поддерживаються Австрией.
+                  "Выберите нашу консалтинговую компанию для успешного развития
+                  вашего бизнеса. Мы предлагаем комплексные решения, основанные
+                  на глубоком знании рынка, инновационных подходах и богатом
+                  опыте. Наша команда готова поддержать вас в решении самых
+                  сложных задач, обеспечивая надежное партнерство и
+                  профессиональное сопровождение на пути к успеху."
                 </p>
-                
-              </div>
+                {/* <img src="/images/flag-avstrii.jpg" alt="" /> */}
             </div>
-
           </div>
-
         </div>
-
       </section>
     </main>
-  )
-}
-export default Home
+  );
+};
+export default Home;

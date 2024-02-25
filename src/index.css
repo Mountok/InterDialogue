@@ -3,3 +3,73 @@
     display: flex;
     flex-direction: column;
 }
+
+
+@media (max-width: 414px) {
+    
+.header{
+    padding: 0px;
+    justify-content: space-around;
+}
+.logotype img{
+    padding: 0 ;
+    width: 80px;
+}
+
+.navbar ul li {
+    width: 40px;
+    padding: 0 8px;
+}
+.navbar ul li:last-child{
+    display: none;
+}
+.navbar ul li .link{
+    font-size: 10px;
+    width: 40px;
+    line-height: 30px;
+}
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 5px;
+}
+.footer .small_text{
+    color: #5c5c5c;
+    font-size: 12px;
+}
+.footer a{
+    color: #e9e9e9;
+
+}
+.footer div{
+    border-top: 1px solid rgb(209, 209, 209);
+    margin: 10px 0px;
+}
+.company{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.address{
+    width: 100%;
+    
+
+}
+.rooms{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer a:hover{
+    color: #ffffff;
+}
+
+}

@@ -2,10 +2,15 @@ import './App.css'
 import {Link, Route, Routes, useLocation} from 'react-router-dom'
 import Home from './screens/homePage/Home.jsx'
 import About from './screens/aboutPage/About.jsx'
+import Service from './screens/servicesPage/Service.jsx';
+import MasculinePage from './screens/masculinePages/MasculinePage.jsx';
+import Contacts from './screens/contacts/Contacts.jsx';
+import { useState } from 'react';
 
 
 function App() {
   const location = useLocation();
+  const [len,setLen] = useState(true)
   return (
   <>
     <header className='header'>
@@ -15,11 +20,11 @@ function App() {
       <nav className='navbar'>
         <ul>
           <li className={(location.pathname == '/') ? 'active' : ''} ><Link className='link' to='/' >Главная</Link></li>
-          <li className={(location.pathname == '/about') ? 'active' : ''}><Link className='link' to='/about'>О компании</Link></li>
-          <li className={(location.pathname == '/service') ? 'active' : ''}><Link className='link' to='/services'>Услуги</Link></li>
-          <li className={(location.pathname == '/reviews') ? 'active' : ''}><Link className='link' to='/reviews'>Отзывы</Link></li>
+          <li className={(location.pathname == '/about') ? 'active' : ''}><Link className='link' to='/about'>О Нас</Link></li>
+          <li className={(location.pathname == '/services') ? 'active' : ''}><Link className='link' to='/services'>Услуги</Link></li>
+          <li className={(location.pathname == '/masculine') ? 'active' : ''}><Link className='link' to='/masculine'>Отзывы</Link></li>
           <li className={(location.pathname == '/contacts') ? 'active' : ''}><Link className='link' to='/contacts'>Контакты</Link></li>
-          <li className={(location.pathname == '/en') ? 'active' : ''}><Link className='link' to='/en'>ENG</Link></li>
+          <li><Link onClick={() => setLen(!len)}  className='link'>{len ? "RU" : "ENG"}</Link></li>
         </ul>
       </nav>  
     </header>
@@ -28,6 +33,9 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
+      <Route path='/services' element={<Service/>}/>
+      <Route path='/masculine' element={<MasculinePage/>}/>
+      <Route path='/contacts' element={<Contacts/>}/>
     </Routes> 
 
     <footer className='footer'>
@@ -46,9 +54,6 @@ function App() {
         <a>office@interdialogbusiness.com</a>
         <p className='small_text' >Телефон:</p>
         <a>(+43) 664 568 01 55</a>
-        <p className='small_text' >Факс:</p>
-        <a>+43 (1) 890 62 70</a>
-        <p></p>
       </div>
 
       <div className="rooms">

@@ -1,0 +1,77 @@
+
+.contacts_presentation{
+    position: relative;
+      height: 70dvh;
+      background: url(/images/flag-avstrii.jpg) no-repeat;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.557);
+      background-blend-mode: multiply;
+    }
+    
+    .contacts_presentation .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .contacts_presentation .title p:nth-child(1) {
+        color: #51b7db;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 80px;
+      }
+      
+      .contacts_presentation .title p:nth-child(2) {
+        color: #ffffff;
+        line-height: 35px;
+        font-size: 25px;
+        letter-spacing: 1px;
+      }
+    
+.contacts_list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 130px;
+}
+.contacts_list div {
+  font-size: 14px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+@media (max-width: 414px) {
+  .contacts_presentation{
+    position: relative;
+      background-position: -320px 0;
+    }
+  .contacts_presentation .title {
+      width: 95%;
+    }
+    
+    .contacts_presentation .title p:nth-child(1) {
+      font-size: 25px;
+      line-height: 40px;
+    }
+    
+    .contacts_presentation .title p:nth-child(2) {
+      line-height: 18px;
+      font-size: 18px;
+    }
+  
+.contacts_list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+}
+.contacts_list div {
+  width: 90%;
+}
+}

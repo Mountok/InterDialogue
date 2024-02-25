@@ -1,0 +1,112 @@
+.main{
+    flex: 1;
+
+}
+.service_presentation{
+position: relative;
+  height: 70dvh;
+  background: url(/images/business.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0;
+  background-color: rgba(0, 0, 0, 0.557);
+  background-blend-mode: multiply;
+}
+
+.service_presentation .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .service_presentation .title p:nth-child(1) {
+    color: #51b7db;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 80px;
+  }
+  
+  .service_presentation .title p:nth-child(2) {
+    color: #ffffff;
+    line-height: 35px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+
+
+.service_cards{
+  display: flex;
+  flex-wrap: wrap;
+padding: 40px 180px;
+}
+.service_item{
+  background-color: #ffffff;
+  margin: 20px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width:500px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgb(193, 195, 195);
+
+  transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.service_item:hover{
+  transform: scale(1.025);
+  box-shadow: 0 0 10px rgb(128, 211, 211);
+
+}
+.service_item_info p:nth-child(1){
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.service_item_info p:nth-child(2){
+  padding-right: 10px;
+  font-size: 14px;
+  color: rgb(145, 145, 145);
+}
+.service_card_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service_card_img_logo{
+  color: #51b7db;
+  font-size: 50px;
+}
+
+@media (max-width: 414px) {
+  
+
+
+    .service_presentation .title {
+      width: 95%;
+  
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .service_presentation .title p:nth-child(1) {
+      font-size: 30px;
+      text-align: center;
+      line-height: 80px;
+    }
+    
+    .service_presentation .title p:nth-child(2) {
+      line-height: 18px;
+      text-align: center;
+
+      font-size: 18px;
+    }
+  
+  
+  
+  .service_cards{
+  padding: 20px 10px;
+  }
+}
