@@ -3,9 +3,9 @@ import "./HomeStyle.css";
 const Home = () => {
   let [imageNum, setImageNum] = useState(1);
   let [allNums, setAllNums] = useState([1, 2, 3, 4, 5, 6, 7]);
-  setInterval(() => {
-    changePhoto();
-  }, 10000);
+  // setInterval(() => {
+  //   changePhoto();
+  // }, 10000);
 
   const changePhoto = () => {
     if (allNums[imageNum + 1 - 1] == imageNum + 1) {
@@ -91,22 +91,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="about_content_2">
-            <div className="about_content_2_block">
-              <div className="about_content_2_block_header">
-                <p>Почему именно мы?</p>
-              </div>
-                <p>
-                  "Выберите нашу консалтинговую компанию для успешного развития
-                  вашего бизнеса. Мы предлагаем комплексные решения, основанные
-                  на глубоком знании рынка, инновационных подходах и богатом
-                  опыте. Наша команда готова поддержать вас в решении самых
-                  сложных задач, обеспечивая надежное партнерство и
-                  профессиональное сопровождение на пути к успеху."
-                </p>
-                {/* <img src="/images/flag-avstrii.jpg" alt="" /> */}
-            </div>
-          </div>
+          
         </div>
       </section>
     </main>

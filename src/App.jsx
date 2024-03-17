@@ -6,11 +6,28 @@ import Service from './screens/servicesPage/Service.jsx';
 import MasculinePage from './screens/masculinePages/MasculinePage.jsx';
 import Contacts from './screens/contacts/Contacts.jsx';
 import { useState } from 'react';
+import {useTranslation} from 'react-i18next'
+import RuleServices from './screens/ServicesScreens/RuleServices.jsx';
+import KonsaltingKadrov from './screens/ServicesScreens/KonsaltingKadrov.jsx';
+import { FinanceKonsalting } from './screens/ServicesScreens/FinanceKonsalting.jsx';
 
 
 function App() {
   const location = useLocation();
   const [len,setLen] = useState(true)
+  const { t, i18n} = useTranslation()
+  const changeLanguage = (boolen) => {
+    if (boolen) {
+      setLen(!len)
+      i18n.changeLanguage("en")
+    } else {
+      setLen(!len)
+      i18n.changeLanguage("ru")
+    }
+    
+
+
+  };
   return (
   <>
     <header className='header'>
@@ -19,12 +36,12 @@ function App() {
       </div>
       <nav className='navbar'>
         <ul>
-          <li className={(location.pathname == '/') ? 'active' : ''} ><Link className='link' to='/' >Главная</Link></li>
-          <li className={(location.pathname == '/about') ? 'active' : ''}><Link className='link' to='/about'>О Нас</Link></li>
-          <li className={(location.pathname == '/services') ? 'active' : ''}><Link className='link' to='/services'>Услуги</Link></li>
-          <li className={(location.pathname == '/masculine') ? 'active' : ''}><Link className='link' to='/masculine'>Отзывы</Link></li>
-          <li className={(location.pathname == '/contacts') ? 'active' : ''}><Link className='link' to='/contacts'>Контакты</Link></li>
-          <li><Link onClick={() => setLen(!len)}  className='link'>{len ? "RU" : "ENG"}</Link></li>
+          <li className={(location.pathname == '/') ? 'active' : ''} ><Link className='link' to='/' >{t("header_home")}</Link></li>
+          <li className={(location.pathname == '/about') ? 'active' : ''}><Link className='link' to='/about'>{t("header_about_us")}</Link></li>
+          <li className={(location.pathname == '/services') ? 'active' : ''}><Link className='link' to='/services'>{t("header_services")}</Link></li>
+          <li className={(location.pathname == '/masculine') ? 'active' : ''}><Link className='link' to='/masculine'>{t("header_opinion")}</Link></li>
+          <li className={(location.pathname == '/contacts') ? 'active' : ''}><Link className='link' to='/contacts'>{t("header_contacts")}</Link></li>
+          <li className='link' onClick={() => changeLanguage(len)} >{len ? "en" : "ru"}</li>
         </ul>
       </nav>  
     </header>
@@ -34,6 +51,9 @@ function App() {
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
       <Route path='/services' element={<Service/>}/>
+      <Route path='/services/1' element={<RuleServices/>}/>
+      <Route path='/services/2' element={<KonsaltingKadrov/>}/>
+      <Route path='/services/3' element={<FinanceKonsalting/>}/>
       <Route path='/masculine' element={<MasculinePage/>}/>
       <Route path='/contacts' element={<Contacts/>}/>
     </Routes> 

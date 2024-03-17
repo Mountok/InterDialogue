@@ -8,9 +8,11 @@ import { GrAnalytics } from "react-icons/gr";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 import { LiaNewspaperSolid } from "react-icons/lia";
 import { IoPersonAddSharp } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 
 const Service = () => {
+  const navigate = useNavigate()
   return (
     <main className="main">
       <section className="service_presentation">
@@ -24,7 +26,7 @@ const Service = () => {
       </section>
       <section className="service_cards">
         <div className="service_item">
-          <div className="service_item_info">
+          <div onClick={()=>navigate("/services/1")} className="service_item_info">
             <p>Правовые услуги</p>
             <p>Правовое обеспечение деятельности предприятий, юридическое сопровождение сделок, разработка и составление контрактов, претензий, исков и жалоб в суд, консультации по правовым вопросам.</p>
           </div>
@@ -33,7 +35,7 @@ const Service = () => {
           </div>
         </div>
         <div className="service_item">
-          <div className="service_item_info">
+          <div onClick={()=>navigate("/services/2")} className="service_item_info">
             <p>Кадровый консталтинг</p>
             <p>
             Оценка кадрового потенциала, оптимизация технологий управления персоналом и системы оплаты труда, разработка и реализация системы обучения персонала.
@@ -44,7 +46,7 @@ const Service = () => {
           </div>
         </div>
         <div className="service_item">
-          <div className="service_item_info">
+          <div onClick={()=>navigate("/services/3")} className="service_item_info">
             <p>Финансовый консалтинг</p>
             <p>Создание финансового плана и плана денежных потоков, улучшение ликвидности и платежеспособности, управление дебиторской задолженностью, контроль над расходами.</p>
           </div>

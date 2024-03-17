@@ -1,0 +1,41 @@
+.rule_services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px  100px 40px 100px;
+
+}
+.rule_s_header{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.rule_s_header h2 {
+    color: #51b7db;
+    font-size: 40px;
+
+}
+.rule_s_content{
+    max-width: 800px;
+    line-height: 24px;
+
+}
+
+.rule_s_content ul {
+    padding-left: 20px;   
+}
+.rule_s_content ul li{
+    margin: 10px 0;
+}
+
+.rule_s_content .bg_color {
+    background-color: #51b7db;
+    max-width: fit-content;
+    padding: 2px 10px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
