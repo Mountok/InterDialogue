@@ -4,6 +4,11 @@
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  background: url(/images/businessman.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  padding: 20px 0;
 }
 
 .about_present > p:nth-child(1) {
@@ -15,6 +20,7 @@
 }
 
 .about_present > p:nth-child(2) {
+  color: #Ffffff;
   width: 70%;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -47,11 +53,12 @@
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
+  color: #Ffffff;
 }
 .card_item p:nth-child(2) {
   font-size: 12px;
   letter-spacing: 2px;
-  color: rgb(85, 85, 85);
+  color: rgb(255, 255, 255);
   font-style: italic;
 }
 .about_us{
@@ -74,6 +81,12 @@
   line-height: 22px;
   padding-bottom: 30px;
   max-width: 800px;
+}
+.about_us_image_block{
+  height: 200px;
+
+  background: url(/images/businessman.jpg) no-repeat center;
+  background-size: cover;
 }
 @media (max-width: 414px) {
   .about_present {

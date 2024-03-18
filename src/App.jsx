@@ -10,6 +10,11 @@ import {useTranslation} from 'react-i18next'
 import RuleServices from './screens/ServicesScreens/RuleServices.jsx';
 import KonsaltingKadrov from './screens/ServicesScreens/KonsaltingKadrov.jsx';
 import { FinanceKonsalting } from './screens/ServicesScreens/FinanceKonsalting.jsx';
+import Finansirovanie from './screens/ServicesScreens/Finansirovanie.jsx';
+import Ypravlencheskiy from './screens/ServicesScreens/Ypravlencheskiy.jsx';
+import Portfeli from './screens/ServicesScreens/Portfeli.jsx';
+import PersonalSearch from './screens/ServicesScreens/PersonalSearch.jsx';
+import FirmRegist from './screens/ServicesScreens/FirmRegist.jsx';
 
 
 function App() {
@@ -54,6 +59,11 @@ function App() {
       <Route path='/services/1' element={<RuleServices/>}/>
       <Route path='/services/2' element={<KonsaltingKadrov/>}/>
       <Route path='/services/3' element={<FinanceKonsalting/>}/>
+      <Route path='/services/4' element={<Finansirovanie/>}/>
+      <Route path='/services/5' element={<Ypravlencheskiy/>}/>
+      <Route path='/services/6' element={<Portfeli/>}/>
+      <Route path='/services/7' element={<PersonalSearch/>}/>
+      <Route path='/services/8' element={<FirmRegist/>}/>
       <Route path='/masculine' element={<MasculinePage/>}/>
       <Route path='/contacts' element={<Contacts/>}/>
     </Routes> 

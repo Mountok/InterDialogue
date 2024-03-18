@@ -3,6 +3,7 @@ import "./AboutStyle.css";
 const About = () => {
   return (
     <main className="main">
+     
       <section className="about_present">
         <p>
           InterDialogue Bussiness - оказываем консалтинговые услуги в Восточной
@@ -17,6 +18,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      
       <section className="about_us">
         <div>
           <h2>Какие услуги мы оказываем</h2>
