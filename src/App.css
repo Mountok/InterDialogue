@@ -90,3 +90,11 @@ body{
 .footer a:hover{
     color: #ffffff;
 }
+
+
+@media (max-width: 414px) {
+  
+    .logotype img{
+        display: none;
+    }
+}

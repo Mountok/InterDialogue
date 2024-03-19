@@ -3,7 +3,11 @@
 }
 
 /* SECTION PRESENTATION */
-
+.logogogogo{
+  height: 200px;
+  background: url(./InterDialog.png) no-repeat center;
+  background-size: cover;
+}
 .p_image_1{
   background: url(/images/modern_city.jpeg) no-repeat;
 }

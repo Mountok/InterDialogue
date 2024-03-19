@@ -14,12 +14,15 @@ const Home = () => {
       setImageNum(1);
     }
   };
+  const isMobile = window.matchMedia("(max-width: 414px)").matches;
+  console.log(isMobile);
 
   return (
     <main className="main">
       <section className={`presentation p_image_${imageNum}`}>
         <div className="title">
-          <p>InterDialogue</p>
+          {!isMobile ? <p>InterDialog</p>: <div className="logogogogo"></div>}
+          
           <p>
             Профессиональное консалтинговое агентство, основанное бизнесменами с
             <span> реальным</span> практическим опытом.
@@ -70,9 +73,8 @@ const Home = () => {
               src="https://player.vimeo.com/video/146428873?h=10b961b1be"
               width="640"
               height="360"
-              frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
 
