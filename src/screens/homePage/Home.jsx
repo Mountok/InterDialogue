@@ -21,7 +21,7 @@ const Home = () => {
     <main className="main">
       <section className={`presentation p_image_${imageNum}`}>
         <div className="title">
-          {!isMobile ? <p>InterDialog</p>: <div className="logogogogo"></div>}
+          {!isMobile ? <p>InterDialog</p>: <div className="title_image"></div>}
           
           <p>
             Профессиональное консалтинговое агентство, основанное бизнесменами с
