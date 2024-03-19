@@ -20,7 +20,7 @@ position: relative;
   }
   
   .service_presentation .title p:nth-child(1) {
-    color: #51b7db;
+    color: #FAA42B;
     font-weight: 600;
     font-size: 70px;
     line-height: 80px;
@@ -56,7 +56,7 @@ padding: 40px 180px;
 }
 .service_item:hover{
   transform: scale(1.025);
-  box-shadow: 0 0 10px rgb(128, 211, 211);
+  box-shadow: 0 0 10px rgb(52, 121, 233);
 
 }
 .service_item_info p:nth-child(1){
@@ -74,7 +74,7 @@ padding: 40px 180px;
   align-items: center;
 }
 .service_card_img_logo{
-  color: #51b7db;
+  color: #FAA42B;
   font-size: 50px;
 }
 

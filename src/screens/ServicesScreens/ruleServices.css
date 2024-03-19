@@ -14,8 +14,9 @@
     padding-bottom: 40px;
 }
 .rule_s_header h2 {
-    color: #51b7db;
+    color: #2B64FA;
     font-size: 40px;
+    margin-bottom: 10px;
 
 }
 .rule_s_content{
@@ -32,10 +33,21 @@
 }
 
 .rule_s_content .bg_color {
-    background-color: #51b7db;
+    background-color: #2B64FA;
     max-width: fit-content;
     padding: 2px 10px;
     color: white;
     text-transform: uppercase;
     border-radius: 4px;
+}
+
+
+@media (max-width: 414px) {
+    .rule_services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px  10px 40px 10px;
+    
+    }  
 }

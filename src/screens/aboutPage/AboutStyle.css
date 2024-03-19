@@ -15,7 +15,7 @@
   font-size: 30px;
   width: 50%;
   text-align: center;
-  color: #51b7db;
+  color: #FAA42B;
   letter-spacing: 1px;
 }
 
@@ -43,7 +43,7 @@
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  color: #51b7db;
+  color: #2B64FA;
 
   background: url(/images/cite-photo.jpg) no-repeat;
   background-size: cover;
@@ -69,7 +69,7 @@
 }
 .about_us div h2 {
   color: #Ffffff;
-  background-color: #51b7db;
+  background-color: #2B64FA;
   padding: 2px 10px;
   border-radius: 3px;
   width: fit-content;
@@ -123,7 +123,7 @@
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    color: #51b7db;
+    color: #2B64FA;
   
     background: url(/images/cite-photo.jpg) no-repeat;
     background-size: cover;
