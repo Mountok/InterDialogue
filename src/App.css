@@ -43,10 +43,10 @@ body{
     text-decoration: none;
 }
 .navbar ul li:hover{
-    background-color: #2B64FA;
+    background-color: #2462ffc1;
 }
 .navbar ul .active{
-    background-color: #2B64FA;
+    background-color: #2462ffc1;
 
 }
 
@@ -56,11 +56,11 @@ body{
     display: flex;
     justify-content: center;
     padding: 30px 190px;
-    background-color: #2B64FA;
+    background-color: #2462ffc1;
     color: #000000;
 }
 .footer .small_text{
-    color: #5c5c5c;
+    color: #ffffff;
     font-size: 12px;
 }
 .footer a{
