@@ -28,7 +28,52 @@
   font-size: 22px;
   font-style: italic;
 }
+.about_present_2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  background: url(/images/businessman.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.154);
+  background-blend-mode: multiply;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
 
+}
+.about_present_3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  background: url(https://stolicaonego.ru/images/news/483/483762/main.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.154);
+  background-blend-mode: multiply;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.about_present_4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  background: url(https://технология-бизнеса.рф/upload/iblock/2d6/2d616aae7387f785661fe9f915c6dc92.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.154);
+  background-blend-mode: multiply;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
 .card_item {
   padding: 5px;
   border-radius: 5px;
