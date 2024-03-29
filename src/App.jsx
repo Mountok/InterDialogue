@@ -83,7 +83,7 @@ function App() {
         <p className='small_text' >Email</p>
         <a>office@interdialogbusiness.com</a>
         <p className='small_text' >Телефон:</p>
-        <a>(+43) 664 568 01 55</a>
+        <a href="tel:+436645680155">+43 664 568 01 55</a>
       </div>
 
       <div className="rooms">
