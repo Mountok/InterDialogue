@@ -10,7 +10,7 @@ body{
 .header{
     display: flex;
     align-items: center;
-    padding: 0px 190px;
+    padding: 0px 80px;
     justify-content: space-between;
 }
 .logotype img{
