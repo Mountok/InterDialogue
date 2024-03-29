@@ -55,6 +55,7 @@ padding: 40px 180px;
   transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .service_item:hover{
+  cursor: pointer;
   transform: scale(1.025);
   box-shadow: 0 0 10px rgb(52, 121, 233);
 
