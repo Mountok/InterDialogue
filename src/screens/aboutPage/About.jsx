@@ -6,7 +6,7 @@ const About = () => {
 
       <section className="about_present">
         <p>
-          InterDialogue Business - оказываем консалтинговые услуги в Восточной
+          InterDialog Business - оказываем консалтинговые услуги в Восточной
           и Западной Европе.
         </p>
         <p>"Опыт, на который можно положиться. Ваш успех - наша экспертиза."</p>

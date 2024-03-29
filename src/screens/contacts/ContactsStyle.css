@@ -44,7 +44,24 @@
     text-align: center;
 
 }
-
+.our_data{
+  padding: 0px 50px  20px 50px;
+}
+.our_data_bg{
+  padding: 20px;
+  background-color: rgba(52, 121, 233, 0.319);
+  border-radius: 20px;
+}
+.our_data_bg h2{
+  color: rgb(5, 34, 82);
+  font-size: 50px;
+}
+.our_data_bg ul {
+  font-size: 18px;
+  list-style:circle;
+  margin-left: 20px;
+  line-height: 35px;
+}
 
 @media (max-width: 414px) {
   .contacts_presentation{

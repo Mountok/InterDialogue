@@ -44,7 +44,7 @@ function App() {
           <li className={(location.pathname == '/') ? 'active' : ''} ><Link className='link' to='/' >{t("header_home")}</Link></li>
           <li className={(location.pathname == '/about') ? 'active' : ''}><Link className='link' to='/about'>{t("header_about_us")}</Link></li>
           <li className={(location.pathname == '/services') ? 'active' : ''}><Link className='link' to='/services'>{t("header_services")}</Link></li>
-          <li className={(location.pathname == '/masculine') ? 'active' : ''}><Link className='link' to='/masculine'>{t("header_opinion")}</Link></li>
+          {/* <li className={(location.pathname == '/masculine') ? 'active' : ''}><Link className='link' to='/masculine'>{t("header_opinion")}</Link></li> */}
           <li className={(location.pathname == '/contacts') ? 'active' : ''}><Link className='link' to='/contacts'>{t("header_contacts")}</Link></li>
           <li className='link' onClick={() => changeLanguage(len)} >{len ? "en" : "ru"}</li>
         </ul>
