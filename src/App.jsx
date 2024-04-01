@@ -72,27 +72,25 @@ function App() {
       <div className="company">
         <p>© 2004 - 2023</p>
         <p>InterDialogue Business</p>
-        <p className='small_text'>Использование материалов сайта 
-          разрешается только после получения 
-          письменного разрешения.</p>
+        <p className='small_text'>{t("footer_company")}</p>
       </div>
       <div className="address">
         <a>
-        Австрия, г. Вена, ул.Нойвалдеггерштрассе, 19-21/4/5
+        {t("footer_address")}
         </a>
         <p className='small_text' >Email</p>
         <a>office@interdialogbusiness.com</a>
-        <p className='small_text' >Телефон:</p>
+        <p className='small_text' >Phone:</p>
         <a href="tel:+436645680155">+43 664 568 01 55</a>
       </div>
 
       <div className="rooms">
-        <p className='small_text'>Навигация </p>
-        <a href="">Главная</a>
-        <a href="">О компании</a>
-        <a href="">Услуги</a>
-        <a href="">Отзывы</a>
-        <a href="">Контакты</a>
+        <p className='small_text'>{t("footer_small_text")}</p>
+        <a href="">{t("header_home")}</a>
+        <a href="">{t("header_about_us")}</a>
+        <a href="">{t("header_services")}</a>
+        {/* <a href="">Отзывы</a> */}
+        <a href="">{t("header_contacts")}</a>
       </div>
     </footer>
   </>

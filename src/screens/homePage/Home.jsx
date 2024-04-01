@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./HomeStyle.css";
+import { t } from "i18next";
 const Home = () => {
   let [imageNum, setImageNum] = useState(1);
   let [allNums, setAllNums] = useState([1, 2, 3, 4, 5, 6, 7]);
@@ -24,8 +25,7 @@ const Home = () => {
           {!isMobile ? <p>InterDialog</p>: <div className="title_image"></div>}
           
           <p>
-            Профессиональное консалтинговое агентство, основанное бизнесменами с
-            <span> реальным</span> практическим опытом.
+            {t("home_present_text")}
           </p>
         </div>
       </section>
@@ -33,34 +33,32 @@ const Home = () => {
         <div className="services_blocks">
           <div className="service">
             <img src="/svgs/consulting.svg" alt="" />
-            <p className="service_title">Консалтинг</p>
+            <p className="service_title">
+            {t("home_service_1_h")}
+              </p>
             <p className="service_text">
-              Проектный менеджмент и управление процессами. Инвестиционный,
-              правовой, налоговый и кадровый консалтинг.
+              {t("home_service_1_p")}
             </p>
           </div>
           <div className="service">
             <img src="/svgs/audit.svg" alt="" />
-            <p className="service_title">Аудит</p>
+            <p className="service_title">{t("home_service_2_h")}</p>
             <p className="service_text">
-              Анализ вашего бизнеса и выявление ключевых проблем: аудит системы
-              управления, продаж и финансов.
+            {t("home_service_2_p")}
             </p>
           </div>
           <div className="service">
             <img src="/svgs/business.svg" alt="" />
-            <p className="service_title">Бизнес</p>
+            <p className="service_title">{t("home_service_3_h")}</p>
             <p className="service_text">
-              Помощь в регистрации или приобретении бизнеса. Комплексное
-              сопровождение деятельности на территории страны.
+            {t("home_service_3_p")}
             </p>
           </div>
           <div className="service">
             <img src="/svgs/investment.svg" alt="" />
-            <p className="service_title">Инвестиции</p>
+            <p className="service_title">{t("home_service_4_h")}</p>
             <p className="service_text">
-              Изучение возможностей для выгодных и стабильных вариантов вложения
-              средств, позволяющих сохранить и приумножить капитал.
+            {t("home_service_4_p")}
             </p>
           </div>
         </div>
@@ -80,16 +78,13 @@ const Home = () => {
 
           <div className="about_content">
             <p>
-              Бизнес в Европе - это возможность для развития и роста.
-              Европейский рынок предлагает широкие перспективы для инноваций,
-              инвестиций и партнерств. Здесь важно быть в курсе последних
-              тенденций и законодательства, чтобы использовать все преимущества
-              и успешно развивать свой бизнес.
+              {t("home_about_content_1")}
+              
             </p>
             <p>
-              Поэтому знание особенностей бизнеса в Европе и общее понимание
-              местных реалий - ключевые факторы для успешной деятельности на
-              этом перспективном рынке.
+            {t("home_about_content_2")}
+
+              
             </p>
           </div>
 
