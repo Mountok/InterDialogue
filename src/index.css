@@ -25,13 +25,13 @@
     padding: 0 8px;
 }
 .navbar ul li:last-child{
-    display: none;
+    font-size: 14px;
 }
 .navbar ul li .link{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 12px;
     width: 55px;
     height: 40px;
 

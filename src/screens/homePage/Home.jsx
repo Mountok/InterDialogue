@@ -70,7 +70,6 @@ const Home = () => {
               className="about_video"
               src="https://player.vimeo.com/video/146428873?h=10b961b1be"
               width="640"
-              height="360"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               
