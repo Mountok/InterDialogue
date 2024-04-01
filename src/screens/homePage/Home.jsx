@@ -4,9 +4,9 @@ import { t } from "i18next";
 const Home = () => {
   let [imageNum, setImageNum] = useState(1);
   let [allNums, setAllNums] = useState([1, 2, 3, 4, 5, 6, 7]);
-  // setInterval(() => {
-  //   changePhoto();
-  // }, 10000);
+  setInterval(() => {
+    changePhoto();
+  }, 10000);
 
   const changePhoto = () => {
     if (allNums[imageNum + 1 - 1] == imageNum + 1) {
