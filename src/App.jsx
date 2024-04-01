@@ -19,7 +19,7 @@ import FirmRegist from './screens/ServicesScreens/FirmRegist.jsx';
 
 function App() {
   const location = useLocation();
-  const [len,setLen] = useState(true)
+  const [len,setLen] = useState(false)
   const { t, i18n} = useTranslation()
   const changeLanguage = (boolen) => {
     if (boolen) {
