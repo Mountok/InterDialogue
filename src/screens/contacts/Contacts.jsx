@@ -39,7 +39,7 @@ const Contacts = () => {
 
         </div>
       </section>
-      <section className="our_data">
+      {/* <section className="our_data">
         <div className="our_data_bg">
           <ul>
             <li>Почтовый адрес фактического филиала: Австрия, г. Вена,
@@ -56,7 +56,7 @@ const Contacts = () => {
             <li>Данные учетной записи: </li>
           </ul>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };
