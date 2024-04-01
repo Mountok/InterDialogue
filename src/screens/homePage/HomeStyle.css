@@ -148,10 +148,17 @@
 }
 
 .about_content {
-  padding: 24px 100px 24px 100px;
+  padding:  24px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.about_content iframe{
+  border: none;
+  border: 1px solid #2462ffe8;
+  background-color: #2462ffe8;
+  box-shadow:0 0 20px #2462ffe8;
+  border-radius: 20px;
 }
 
 .about_content p:nth-child(1) {

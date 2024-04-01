@@ -73,6 +73,7 @@ const Home = () => {
               height="360"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
+              
             ></iframe>
           </div>
 
