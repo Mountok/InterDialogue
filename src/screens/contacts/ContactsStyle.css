@@ -63,7 +63,7 @@
   line-height: 35px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 480px) {
   .contacts_presentation{
     position: relative;
       background-position: -320px 0;

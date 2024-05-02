@@ -2,25 +2,24 @@ import React, { useState } from "react";
 import "./HomeStyle.css";
 import { t } from "i18next";
 const Home = () => {
-  let [imageNum, setImageNum] = useState(1);
-  let [allNums, setAllNums] = useState([1, 2, 3, 4, 5, 6, 7]);
-  setInterval(() => {
-    changePhoto();
-  }, 10000);
+ 
 
-  const changePhoto = () => {
-    if (allNums[imageNum + 1 - 1] == imageNum + 1) {
-      setImageNum(imageNum + 1);
-    } else {
-      setImageNum(1);
-    }
-  };
+
   const isMobile = window.matchMedia("(max-width: 414px)").matches;
-  console.log(isMobile);
+  // console.log(isMobile);
 
   return (
     <main className="main">
-      <section className={`presentation p_image_${imageNum}`}>
+      <section className={`presentation`}> 
+        <div className="slide">
+          <img className="s_image" src="/images/modern_city.jpeg" alt="#" />
+          <img className="s_image" src="/images/modern_office.jpg" alt="#" />
+          <img className="s_image" src="/images/avstriya.jpg" alt="#" />
+          <img className="s_image" src="/images/germany.jpeg" alt="#" />
+          <img className="s_image" src="/images/Feeney.jpeg" alt="" />
+          <img className="s_image" src="/images/arc-de-triomphe.jpeg" alt="" />
+
+        </div>
         <div className="title">
           {!isMobile ? <p>InterDialog</p>: <div className="title_image"></div>}
           

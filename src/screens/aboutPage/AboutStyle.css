@@ -133,7 +133,7 @@
   background: url(/images/businessman.jpg) no-repeat center;
   background-size: cover;
 }
-@media (max-width: 414px) {
+@media (max-width: 480px) {
   .about_present {
     padding-top: 10px;
   }

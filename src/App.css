@@ -92,7 +92,7 @@ body{
 }
 
 
-@media (max-width: 414px) {
+@media (max-width: 480px) {
   
     .logotype img{
         display: none;

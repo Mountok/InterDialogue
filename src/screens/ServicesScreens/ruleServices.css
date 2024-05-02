@@ -43,7 +43,7 @@
 }
 
 
-@media (max-width: 414px) {
+@media (max-width: 480px) {
     .rule_services{
         display: flex;
         flex-direction: column;
