@@ -28,6 +28,21 @@
   font-size: 22px;
   font-style: italic;
 }
+.about_present_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  background: url(https://247510.selcdn.ru/mybiz_production/posts/images/posters/398213efa44cef856b880aeddbc3d51fe4e7e71b.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.154);
+  background-blend-mode: multiply;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
 .about_present_2{
   display: flex;
   flex-direction: column;
@@ -74,6 +89,38 @@
   margin-bottom: 20px;
   border-radius: 5px;
 }
+.about_present_5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  background: url(https://alterainvest.ru/upload/iblock/11c/11c272fd826333f0cda234f06235d665.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.154);
+  background-blend-mode: multiply;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.about_present_6{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  background: url(https://business.tpu.ru/upload/constructor/b7c/mg9obu3tfmqs229bzyger2piqqopm6bd.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.154);
+  background-blend-mode: multiply;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
 .card_item {
   padding: 5px;
   border-radius: 5px;

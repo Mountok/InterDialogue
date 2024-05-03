@@ -14,24 +14,22 @@ const Contacts = () => {
       </section>
       <section className="contacts_list">
         <div>
-          <p>Адрес:</p>
+          <p>{t("contacts_address")}:</p>
           <h3>
             {t("footer_address")}
           </h3>
         </div>
         <div>
-          <p>Mobile</p>
+          <p>{t("contacts_mobile")}</p>
           <h3>(+43) 664 568 01 55</h3>
-          <p>Phone</p>
+          <p>{t("contacts_phone")}</p>
           <h3>+43 (1) 890 62 70</h3>
         </div>
 
 
         <div>
-          <p>Email:</p>
+          <p>{t("contacts_email")}:</p>
           <h3>office@interdialogbusiness.com</h3>
-          <p>Phone:</p>
-          <h3>+43 (1) 890 62 70</h3>
 
 
 

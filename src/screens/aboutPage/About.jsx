@@ -27,6 +27,8 @@ const About = () => {
           </p>
         </div>
         <div>
+        <section className="about_present_1"></section>
+
           <h2>{t("about_us_section_2_h")}</h2>
           <p>
           {t("about_us_section_2_p")}
@@ -38,9 +40,12 @@ const About = () => {
           <p>
           {t("about_us_section_3_p")}
           </p>
+          <section className="about_present_3"></section>
+
           <h2>
           {t("about_us_section_4_h")}
           </h2>
+
           <p>
           {t("about_us_section_4_p")}
           </p>
@@ -51,11 +56,13 @@ const About = () => {
           <p>
           {t("about_us_section_5_p")}
           </p>
-          <section className="about_present_3"></section>
+          <section className="about_present_5"></section>
           <h2>{t("about_us_section_6_h")}</h2>
           <p>
           {t("about_us_section_6_p")}
           </p>
+          <section className="about_present_6"></section>
+
         </div>
 
       </section>
