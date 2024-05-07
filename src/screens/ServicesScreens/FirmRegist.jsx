@@ -1,7 +1,10 @@
 import { t } from "i18next";
-import React from "react";
+import React, { useEffect } from "react";
 
 const FirmRegist = () => {
+  useEffect(()=>{
+    window.scrollTo({top:0})
+  },[])
   return (
     <main className="rule_services">
       <div className="rule_s_header">

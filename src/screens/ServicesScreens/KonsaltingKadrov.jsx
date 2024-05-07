@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ruleServices.css"
 import { t } from "i18next";
 const KonsaltingKadrov = () => {
+  useEffect(()=>{
+    window.scrollTo({top:0})
+  },[])
   return (
     <main className="rule_services">
       <div className="rule_s_header">
