@@ -19,9 +19,13 @@ body{
 }
 .navbar{
     display: flex;
+    cursor: pointer;
+
 }
 
 .navbar ul{
+    cursor: pointer;
+
     display: flex;
     align-items: center;
     list-style: none;
@@ -33,8 +37,11 @@ body{
     width: 110px;
     height: 100%;
     transition: .2s ease-in-out;  
+    cursor: pointer;
+
 }
 .navbar ul li .link{
+    cursor: pointer;
     height: 100%;    
     width: 110px;
     text-align: center;

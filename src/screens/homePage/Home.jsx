@@ -12,12 +12,32 @@ const Home = () => {
     <main className="main">
       <section className={`presentation`}>
         <div className="slide">
-          <img className="s_image" src="/images/modern_city.jpeg" alt="#" />
-          <img className="s_image" src="/images/modern_office.jpg" alt="#" />
-          <img className="s_image" src="/images/avstriya.jpg" alt="#" />
-          <img className="s_image" src="/images/germany.jpeg" alt="#" />
-          <img className="s_image" src="/images/Feeney.jpeg" alt="" />
-          <img className="s_image" src="/images/arc-de-triomphe.jpeg" alt="" />
+          <img className="s_image" src="/images/image_country.jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (1).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (2).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (3).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (4).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (5).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (6).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (7).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (8).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (9).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (10).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (11).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (12).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (13).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (14).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (15).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (16).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (17).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (18).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (19).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (20).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (21).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (22).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (23).jpg" alt="#" />
+          <img className="s_image" src="/images/image_country (24).jpg" alt="#" />
+
 
         </div>
         <div className="title">
@@ -78,7 +98,7 @@ const Home = () => {
               <iframe
                 className="about_video"
                 src="https://player.vimeo.com/video/146428873?h=10b961b1be"
-                width="640"
+           
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
 
