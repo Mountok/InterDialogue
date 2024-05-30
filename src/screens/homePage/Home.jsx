@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HomeStyle.css";
 import { useTranslation } from "react-i18next";
+import MainSlider from "../components/sliderMain/MainSlider";
 const Home = () => {
   const { t, i18n} = useTranslation()
   useEffect(()=>{
@@ -10,44 +11,17 @@ const Home = () => {
 
   return (
     <main className="main">
-      <section className={`presentation`}>
-        <div className="slide">
-          <img className="s_image" src="/images/image_country.jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (1).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (2).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (3).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (4).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (5).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (6).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (7).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (8).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (9).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (10).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (11).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (12).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (13).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (14).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (15).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (16).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (17).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (18).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (19).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (20).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (21).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (22).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (23).jpg" alt="#" />
-          <img className="s_image" src="/images/image_country (24).jpg" alt="#" />
+      <MainSlider/>
 
-
-        </div>
+      {/* <section className={`presentation`}>
         <div className="title">
           {!isMobile ? <p>InterDialog</p> : <div className="title_image"></div>}
 
           <p>
             {t("home_present_text")}
           </p>
-        </div>
-      </section>
+        </div> 
+      </section> */}
       <section className="services">
         <div className="services_blocks">
           <div className="service">
