@@ -12,11 +12,10 @@
   position: absolute;
   height: inherit;
   animation: changeBg;
-  animation-duration: 500s;
+  animation-duration: 145s;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background-color: rgb(131, 131, 131);
-  background-image: url("/images/photo1716466398 (2).jpeg");
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0, 1.33);
+  background-color: rgba(131, 131, 131, 0);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -30,126 +29,110 @@
     background-color: rgb(170, 170, 170);
   }
 }
-
 @keyframes changeBg {
   0% {
-
-    background-image: url("/images/photo1716466398 (2).jpeg");
+    background-image: url("/images/modern_city.jpeg");
   }
+  3% {
+    background-image: url("/images/Feeney.jpeg");
 
-  4% {
+  }
+  6% {
+
+    background-image: url("/images/brusel.jpeg");
+  }
+  9%{
+    background-image: url("/images/photo1716466398 (2).jpeg");
+
+  }
+  12%{
     background-image: url("/images/photo1716466398 (3).jpeg");
 
   }
-
-  8% {
-
+  15%{
     background-image: url("/images/photo1716466398 (4).jpeg");
-  }
 
-  12% {
+  }
+  18% {
     background-image: url("/images/photo1716466398 (5).jpeg");
 
 
   }
-
-  16% {
+  21% {
     background-image: url("/images/photo1716466398 (6).jpeg");
 
   }
-
-  20% {
+  24% {
     background-image: url("/images/photo1716466398 (7).jpeg");
 
   }
-
-  24% {
+  27% {
     background-image: url("/images/photo1716466398 (8).jpeg");
   }
-
-  28% {
+  30% {
     background-image: url("/images/photo1716466398 (9).jpeg");
   }
-
-  32% {
+  33% {
     background-image: url("/images/photo1716466398 (10).jpeg");
 
   }
-
   36% {
     background-image: url("/images/photo1716466398.jpeg");
 
   }
-
-  40% {
+  39% {
     background-image: url("/images/photo1716466445 (1).jpeg");
 
   }
-
-  44% {
+  42% {
     background-image: url("/images/photo1716466445 (2).jpeg");
 
   }
-
-  48% {
+  45% {
     background-image: url("/images/photo1716466445 (3).jpeg");
 
   }
-
-  52% {
+  48% {
     background-image: url("/images/photo1716466445 (4).jpeg");
   }
-
-  56% {
+  51% {
     background-image: url("/images/photo1716466445 (5).jpeg");
   }
-
-  60% {
+  55% {
     background-image: url("/images/photo1716466445 (6).jpeg");
   }
-
-  64% {
+  60% {
     background-image: url("/images/photo1716466445 (7).jpeg");
   }
-
-  68% {
+  65% {
     background-image: url("/images/photo1716466445 (8).jpeg");
   }
-
-  72% {
+  70% {
     background-image: url("/images/photo1716466445 (9).jpeg");
   }
-
-  76% {
+  75% {
     background-image: url("/images/photo1716466445.jpeg");
   }
-
   80% {
     background-image: url("/images/photo1716466461 (1).jpeg");
 
   }
-
-  84% {
+  85% {
     background-image: url("/images/photo1716466461 (2).jpeg");
 
   }
-
-  88% {
+  90% {
     background-image: url("/images/photo1716466461 (3).jpeg");
-    
   }
-
-  92% {
+  94% {
     background-image: url("/images/photo1716466461 (4).jpeg");
-
   }
 
-  96% {
+  98% {
     background-image: url("/images/photo1716466461");
-
   }
+
   100% {
     background-image: url("/images/modern_city.jpeg");
-
   }
 }

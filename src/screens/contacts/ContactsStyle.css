@@ -1,7 +1,7 @@
 
 .contacts_presentation{
     position: relative;
-      height: 70dvh;
+      height: 70vh;
       background: url(/images/flag-avstrii.jpg) no-repeat;
       background-size: cover;
       background-color: rgba(0, 0, 0, 0.557);
@@ -68,8 +68,9 @@
 
 @media (max-width: 480px) {
   .contacts_presentation{
+    height: 70vh;
     position: relative;
-      background-position: -320px 0;
+      background-position: 0px 0;
     }
   .contacts_presentation .title {
       width: 95%;
@@ -94,4 +95,27 @@
 .contacts_list div {
   width: 90%;
 }
+
+.our_data{
+  padding: 0px 5px  20px 5px;
+}
+.our_data_bg{
+  padding: 18px;
+  background-color: rgba(52, 121, 233, 0.319);
+  border-radius: 20px;
+}
+.our_data_bg p {
+  font-size: 25px;
+}
+.our_data_bg h2{
+  color: rgb(5, 34, 82);
+  font-size: 30px;
+}
+.our_data_bg ul {
+  font-size: 15px;
+  list-style:circle;
+  margin-left: 20px;
+  line-height: 35px;
+}
+
 }

@@ -1,27 +1,29 @@
 import React, { useEffect, useState } from "react";
 import "./HomeStyle.css";
 import { useTranslation } from "react-i18next";
-import MainSlider from "../components/sliderMain/MainSlider";
+
+import Slider from "react-slick";
+import SliderComponent from "../components/SliderComponent/SliderComponent";
 const Home = () => {
   const { t, i18n} = useTranslation()
   useEffect(()=>{
     console.log(i18n.language)
   },[])
   const isMobile = window.matchMedia("(max-width: 414px)").matches;
-
+ 
   return (
     <main className="main">
-      <MainSlider/>
-
-      {/* <section className={`presentation`}>
+      <SliderComponent/>
+      <section className={`presentation`}>
+      
         <div className="title">
-          {!isMobile ? <p>InterDialog</p> : <div className="title_image"></div>}
+          <p>InterDialog</p>
 
           <p>
             {t("home_present_text")}
           </p>
         </div> 
-      </section> */}
+      </section>
       <section className="services">
         <div className="services_blocks">
           <div className="service">

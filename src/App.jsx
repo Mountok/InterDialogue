@@ -70,8 +70,8 @@ function App() {
 
     <footer className='footer'>
       <div className="company">
-        <p>© 2004 - 2023</p>
-        <p>InterDialogue Business</p>
+        <p>© 2004 - 2024</p>
+        <p>InterDialog Business</p>
         <p className='small_text'>{t("footer_company")}</p>
       </div>
       <div className="address">
@@ -80,8 +80,12 @@ function App() {
         </a>
         <p className='small_text' >Email</p>
         <a>office@interdialogbusiness.com</a>
-        <p className='small_text' >Phone:</p>
+        <p className='small_text' >Mobile:</p>
         <a href="tel:+436645680155">+43 664 568 01 55</a>
+        <p className='small_text' >Phone:</p>
+        <a href="tel:+4318906270">+43 (1) 890 62 70</a>
+
+
       </div>
 
       <div className="rooms">

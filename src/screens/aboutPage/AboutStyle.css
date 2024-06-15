@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
 
-
+  height: 70vh;
   padding-top: 20px;
   background: url(/images/businessman.jpg) no-repeat center;
   background-size: cover;
@@ -185,6 +185,7 @@
 @media (max-width: 480px) {
   .about_present {
     padding-top: 10px;
+    
   }
   
   .about_present > p:nth-child(1) {

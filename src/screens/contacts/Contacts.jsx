@@ -46,6 +46,7 @@ const Contacts = () => {
             </section>
             <section className="our_data">
                 <div className="our_data_bg">
+                    <p>Impressum</p>
                     <ul>
                         <li>Firmenname: InterDialog Business GmbH</li>
                         <li>Firmenbuchnummer: 446025w</li>
@@ -78,7 +79,7 @@ const Contacts = () => {
                         <li>Mobile: (+43) 664 568 01 55</li>
                         <li>Email: office@interdialogbusiness.com
                             <br/>
-                            https://www.interdialogbusiness.com</li>
+                            https://interdialog-business.com</li>
                     </ul>
                 </div>
             </section>
